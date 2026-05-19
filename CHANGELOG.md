@@ -6,6 +6,12 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 ## [Unreleased]
 
 ### Added
+- New skill **`leadup-super-prompt-builder`** (13th skill) — converts a
+  rough idea / instruction / broken-English task into a copy-paste-ready
+  structured prompt for Claude Code, opencode, RuFlo, or ChatGPT, covering
+  12 prompt types. Includes master references `prompt-frameworks.md` and
+  `leadup-prompt-templates.md` (synced into the skill) and 4 prompt asset
+  templates (Claude Code, RuFlo, API research, new project).
 - `CONTRIBUTING.md` — contribution rules, repo/sync model, skill
   requirements, and commit conventions for the public repo.
 
