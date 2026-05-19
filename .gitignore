@@ -1,0 +1,18 @@
+# Packaging output (created only on approval)
+dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local env (never commit real secrets)
+.env
+.env.local
+.env.*.local
+
+# Auto-generated memory DB (ruflo/ruvector) — not part of the pack
+ruvector.db
+*.db
+
+# OS noise
+.DS_Store
