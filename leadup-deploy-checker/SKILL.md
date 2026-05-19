@@ -30,6 +30,12 @@ includes a security gate but defers deep auditing to it).
 
 Use `references/deploy-checklist.md`.
 
+> **Deploy target vs. backend:** If the project only *uses* Coolify as a
+> downstream provisioning backend (and itself ships another way — e.g.
+> Docker Compose + rsync to leadup-server), evaluate the project's *actual*
+> deploy path, not Coolify. Confirm the real target from `DEPLOY.md` /
+> compose files before running the checklist.
+
 1. **Build & run**: Dockerfile builds clean; app serves; prod build succeeds;
    no dev/localhost URLs in prod paths.
 2. **Environment**: `.env.example` covers every required key (placeholders);
@@ -69,6 +75,8 @@ See `references/security-rules.md` and `deploy-checklist.md`. Most relevant:
 - Forgetting persistent volumes → uploads/DB wiped on next deploy.
 - Port collision with another app already on `leadup-server`.
 - No rollback target recorded before an update deploy.
+- Evaluating the Coolify deploy path when the project only *uses* Coolify as
+  a provisioning backend and actually ships via Docker Compose / rsync.
 - Actually running the deploy/push instead of stopping at the gate.
 
 ## Troubleshooting
