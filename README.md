@@ -92,4 +92,17 @@ ever sent to an external tool.
 - `scripts/package_all_skills.sh` exists but is **not** run automatically;
   packaging/zipping/committing happens only on the user's approval.
 
-License: MIT (see `LICENSE`).
+## About LeadUp
+
+Built and maintained by **LeadUp Technologies** — a web agency + SaaS shop
+that builds client websites, multi-tenant SaaS products, Flutter apps, and
+hosting tools, tested in Docker and deployed under `*.leadup.in`.
+
+- 🌐 Website: **https://leadup.in**
+- 🧑‍💻 GitHub: **https://github.com/leadupofficial**
+- 📦 This pack: **https://github.com/leadupofficial/leadup-claude-skills**
+
+These skills encode LeadUp's real working loop so any Claude session starts
+already knowing the workflow, safety rules, and expected output format.
+
+License: MIT (see `LICENSE`). © LeadUp Technologies — https://leadup.in
