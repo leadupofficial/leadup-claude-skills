@@ -5,7 +5,9 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 
 ## [Unreleased]
 
-_Nothing yet._
+### Added
+- `CONTRIBUTING.md` — contribution rules, repo/sync model, skill
+  requirements, and commit conventions for the public repo.
 
 ## [0.1.0] - 2026-05-19
 
