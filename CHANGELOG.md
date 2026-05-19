@@ -5,6 +5,13 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 
 ## [Unreleased]
 
+_Nothing yet._
+
+## [0.1.0] - 2026-05-19
+
+First public release. Published at
+https://github.com/leadupofficial/leadup-claude-skills
+
 ### Changed
 - Skills are now **fully self-contained**: each skill bundles its own
   `references/` subfolder with only the reference files it links. SKILL.md
@@ -42,12 +49,12 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 - Pack tooling: `check_skill_structure.py`, `validate_frontmatter.py`,
   `list_skills.py`, `check_all_skills.py`, `package_skills.sh`,
   `package_all_skills.sh`.
-- Root docs: README, INSTALL, TESTING, LICENSE (MIT).
+- Root docs: README, INSTALL, TESTING, LICENSE (MIT), .gitignore.
+- "About LeadUp" section in README with company website https://leadup.in.
 
 ### Security
 - All `.env.example` use `__SET_ME__` placeholders only.
 - No skill pushes, deploys, or runs remote commands without approval.
 - Skills never read/print real `.env` values or API keys.
-
-## [0.1.0] - 2026-05-19
-- Pack created (pending review/approval; not yet packaged or committed).
+- `ruvector.db`, `.env`, `__pycache__`, `dist/` git-ignored; secret scan
+  clean before publish.
