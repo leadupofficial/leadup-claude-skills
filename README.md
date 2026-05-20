@@ -1,8 +1,11 @@
 # LeadUp Claude Skills Pack
 
-A pack of 14 Claude skills built around the real LeadUp Technologies workflow:
-attach a source → analyze & research → plan → build → test in Docker → push →
-deploy to Coolify/`leadup-server` → update project memory.
+A pack of 22 Claude skills built around the real LeadUp Technologies
+workflow: attach a source → analyze & research → plan → build → test in
+Docker → push → deploy to Coolify/`leadup-server` → update project memory.
+Split into a **Core Pack** (14 skills for the build-and-ship loop) and a
+**Growth Pack** (8 skills for SEO, content, social, ads, CRO, features,
+and growth research).
 
 Each skill is a **fully self-contained** folder: a `SKILL.md` plus its own
 `references/` subfolder bundling only the reference files it links. A single
@@ -20,6 +23,8 @@ the workflow, the safety rules, and the expected output format.
 
 ## Skills
 
+### Core Pack (build-and-ship loop)
+
 | # | Skill | Use it to… |
 |---|---|---|
 | 1 | `leadup-project-kickoff` | Bootstrap a new project (PROJECT/CLAUDE/STATUS/DEPLOY/SECURITY/README/.env.example, stack, DB plan, MVP, deploy plan) |
@@ -36,6 +41,19 @@ the workflow, the safety rules, and the expected output format.
 | 12 | `leadup-client-document-generator` | Generate proposals, reports, dev/handoff docs, API emails |
 | 13 | `leadup-super-prompt-builder` | Turn a rough idea/instruction into a copy-paste-ready structured prompt for Claude Code, opencode, RuFlo, or ChatGPT |
 | 14 | `leadup-human-content-editor` | Rewrite AI-generated or AI-looking copy into natural, human, business-ready content for websites, SaaS, app UI, proposals, and social posts |
+
+### Growth Pack (SEO, content, ads, social, CRO, features, research)
+
+| # | Skill | Use it to… |
+|---|---|---|
+| 15 | `leadup-seo-strategist` | Audit a site and ship a 30/60/90 day SEO plan (technical + on-page + schema + content gaps) |
+| 16 | `leadup-keyword-competitor-researcher` | Build a clustered keyword map + 3–5 competitor analysis with honest data labels |
+| 17 | `leadup-blog-content-writer` | Draft SEO-aware blog or service-page content in LeadUp's human, em-dash-free voice |
+| 18 | `leadup-smm-growth-planner` | Plan a 30-day social media growth strategy with pillars, reels, hooks, schedule, and KPIs |
+| 19 | `leadup-digital-ads-planner` | Plan paid campaigns (Google, Meta, LinkedIn, YouTube) with structure, budget, copy, creative, tracking, and policy notes |
+| 20 | `leadup-landing-page-cro-planner` | Audit a landing page and produce prioritized CRO fixes, A/B tests, and a conversion checklist |
+| 21 | `leadup-feature-option-planner` | Plan must-have, premium, and AI-powered features with MVP / Phase 2 / Phase 3 phasing and one recommended next feature |
+| 22 | `leadup-growth-research-agent` | Orchestrator: classify a growth request, pick the right LeadUp skill, run cross-cutting research, and recommend the next action |
 
 ## How it helps LeadUp work
 

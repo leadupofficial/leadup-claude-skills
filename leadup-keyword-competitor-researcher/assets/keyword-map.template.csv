@@ -1,0 +1,17 @@
+keyword,cluster,intent,page_type,target_page,priority,volume_band,difficulty_band,data_source,confidence,notes
+salon booking software,salon-booking-saas,commercial,landing,/products/salon,high,med,med,GKP,verified,
+online salon booking system,salon-booking-saas,commercial,landing,/products/salon,high,med,med,Ahrefs,verified,
+salon appointment software india,salon-booking-saas,transactional,landing,/products/salon/india,high,low-med,low,autocomplete,estimated,target tier-2 cities
+how to reduce salon no-shows,no-show-reduction,informational,blog,NEW: /blog/reduce-salon-no-shows,med,low,low,PAA,estimated,pillar for whatsapp reminders
+whatsapp reminder for appointments,whatsapp-reminders,commercial,landing,NEW: /features/whatsapp-reminders,high,med,med,GKP,verified,strong intent
+salon software with whatsapp,whatsapp-reminders,commercial,landing,/products/salon,med,low-med,low,autocomplete,estimated,
+best salon software for small business,best-salon-software,commercial,comparison,NEW: /compare/salon-software,med,med,med,Ahrefs,verified,outrank one weak competitor
+salon software pricing india,pricing-intent,transactional,pricing,/pricing,high,low,low,GSC,verified,already on page 2
+salon software vs zoho bookings,brand-comparison,commercial,comparison,NEW: /compare/leadup-vs-zoho,med,low,low,SERP scan,estimated,trademark caution
+appointment software for spa,adjacent-spa,commercial,landing,/products/spa,med,low-med,low,autocomplete,estimated,adjacent vertical
+dental clinic appointment software,adjacent-dental,commercial,landing,/products/dental,med,med,med,GKP,verified,separate vertical landing
+salon billing software,billing,commercial,landing,NEW: /features/billing,med,low-med,med,autocomplete,estimated,
+salon crm,crm,commercial,landing,/products/salon,low,med,high,Ahrefs,verified,broad term, lower priority
+salon management software free,free-intent,commercial,landing,NEW: /pricing#free,low,med,high,autocomplete,estimated,risky audience
+salon software coimbatore,local-coimbatore,transactional,local-landing,NEW: /salon-software-coimbatore,high,low,low,inferred,requires verification,city + service
+salon software chennai,local-chennai,transactional,local-landing,NEW: /salon-software-chennai,high,low,low,inferred,requires verification,city + service

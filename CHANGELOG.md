@@ -6,6 +6,47 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 ## [Unreleased]
 
 ### Added
+- **Growth Skills Pack** (8 new skills, 15th–22nd) — turns the pack from a
+  build-and-ship loop into a build + grow loop. Each skill follows the
+  same 10-required-headings structure, ships with its own
+  `references/` + `assets/`, and never invents metrics:
+  - **`leadup-seo-strategist`** — technical + on-page audit, meta
+    rewrites, schema, internal linking, content gaps, 30/60/90 roadmap.
+    References: `seo-checklist.md`. Assets: `seo-audit.template.md`.
+  - **`leadup-keyword-competitor-researcher`** — seed keywords,
+    clusters, intent, priority, competitor pages, content gaps; volume /
+    CPC / difficulty labelled verified / estimated / requires
+    verification. References: `keyword-research-framework.md`,
+    `competitor-analysis-framework.md`. Assets:
+    `keyword-map.template.csv`.
+  - **`leadup-blog-content-writer`** — SEO blog and service-page drafts
+    with brief, outline, titles, meta, FAQ, internal links, and a
+    human-style draft (no em dashes, no banned hype words). References:
+    `blog-writing-framework.md`. Assets: `blog-brief.template.md`.
+  - **`leadup-smm-growth-planner`** — 30-day social plan with pillars,
+    reels ideas, hooks, captions, posting schedule, engagement plan,
+    KPIs (in bands, never invented). References: `smm-framework.md`.
+    Assets: `content-calendar.template.md`.
+  - **`leadup-digital-ads-planner`** — paid plan covering Google, Meta,
+    LinkedIn, YouTube with structure, budget split, copy variants,
+    creative ideas, LP requirements, tracking checklist, and platform-
+    policy risk notes. References: `digital-ads-framework.md`. Assets:
+    `ad-plan.template.md`.
+  - **`leadup-landing-page-cro-planner`** — above-the-fold, CTA, trust,
+    form, offer, mobile, performance, A/B test plan, and a 25+ item
+    conversion checklist. References: `cro-framework.md`. Assets:
+    `cro-audit.template.md`.
+  - **`leadup-feature-option-planner`** — must-have / premium / AI
+    feature buckets, user roles, MVP / Phase 2 / Phase 3 phasing, and
+    exactly one recommended next feature. References:
+    `feature-planning-framework.md`. Assets:
+    `feature-roadmap.template.md`.
+  - **`leadup-growth-research-agent`** — orchestrator: classifies a
+    growth request, picks the right Growth Pack skill, runs the
+    cross-cutting research (cited sources + access dates), and
+    recommends one next action. References:
+    `growth-research-source-list.md`. Assets:
+    `growth-research-report.template.md`.
 - New skill **`leadup-human-content-editor`** (14th skill) — converts
   AI-generated or AI-looking text into natural, human, client-ready copy
   for LeadUp websites, SaaS, app UI, proposals, and social content. Covers
