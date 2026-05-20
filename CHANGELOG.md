@@ -6,6 +6,87 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 ## [Unreleased]
 
 ### Added
+- **Sales + SaaS + QA + Automation + Privacy expansion** (12 new skills,
+  24th–35th) — adds the rest of LeadUp's working loop beyond build + grow.
+  All follow the same 10-required-headings structure, ship their own
+  `references/` + `assets/`, and route public copy through
+  `leadup-human-content-editor` and sensitive scopes through
+  `leadup-pii-risk-reviewer` / `leadup-security-review`:
+  - **`leadup-sales-proposal-builder`** — client-ready proposals, scopes,
+    quotes, retainers, AMC plans, follow-up messages. References:
+    `proposal-framework.md`. Assets: `proposal.template.md`.
+  - **`leadup-client-requirement-analyzer`** — convert messy client
+    input into structured requirements + missing questions + next reply.
+    References: `client-requirement-framework.md`. Assets:
+    `client-requirements.template.md`.
+  - **`leadup-pricing-package-planner`** — Basic / Standard / Premium
+    tiers with honest exclusions, margin notes, GST handling.
+    References: `pricing-package-framework.md`. Assets:
+    `pricing-packages.template.md`.
+  - **`leadup-lead-funnel-builder`** — end-to-end funnel design: traffic,
+    LP, capture (form or WhatsApp), qualify, follow-up, automation,
+    tracking. References: `lead-funnel-framework.md`. Assets:
+    `lead-funnel.template.md`.
+  - **`leadup-saas-mvp-planner`** — paid SaaS MVP plan with first paid
+    feature, ≤ 6 modules, tenant model, integrations, weekly launch
+    roadmap. References: `saas-mvp-framework.md`. Assets:
+    `saas-mvp-roadmap.template.md`.
+  - **`leadup-ai-feature-planner`** — one AI feature end-to-end with
+    model + fallback, prompt design, cost ledger, privacy flow,
+    non-AI fallback, logging redaction, golden + jailbreak test plan,
+    gated rollout. References: `ai-feature-framework.md`. Assets:
+    `ai-feature-plan.template.md`.
+  - **`leadup-admin-panel-planner`** — navigation, modules, tables,
+    filters, role + permission matrix, KPI cards with named queries,
+    reports, empty/loading/error/no-permission states, audit log
+    events, PII masking. References: `admin-panel-framework.md`.
+    Assets: `admin-panel-plan.template.md`.
+  - **`leadup-qa-test-case-generator`** — critical user flows, manual
+    test cases, edge cases, mobile + a11y, admin + tenant isolation,
+    Razorpay test-mode, Playwright spec outline, acceptance criteria.
+    References: `qa-test-framework.md`. Assets:
+    `qa-test-cases.template.md`.
+  - **`leadup-release-manager`** — release summary, modules touched,
+    migration safety + rollback, env diff, test status, risk register,
+    client comms (internal / paying / public), Go/No-Go. References:
+    `release-checklist.md`. Assets: `release-notes.template.md`.
+  - **`leadup-whatsapp-automation-planner`** — Meta-policy-safe WhatsApp
+    plan: category (Utility / Marketing / Auth / Service), opt-in
+    handling, templates with typed placeholders, CRM fields, workflow
+    steps, failure handling, India IT Rules + DPDP + ASCI notes.
+    References: `whatsapp-automation-framework.md`. Assets:
+    `whatsapp-automation.template.md`.
+  - **`leadup-n8n-workflow-builder`** — n8n workflow with trigger,
+    atomic nodes, credentials as placeholders, signature-verified
+    webhooks, idempotency, retries + dead-letter, manual approval for
+    sensitive actions, text workflow diagram. References:
+    `n8n-workflow-framework.md`. Assets: `n8n-workflow.template.md`.
+  - **`leadup-pii-risk-reviewer`** — PII inventory, data flow, risk
+    scoring, masking + encryption + retention + DSR + consent +
+    privacy-policy notes + developer checklist; aligned with India
+    DPDP, IT Rules, GDPR. References: `pii-risk-framework.md`.
+    Assets: `pii-risk-review.template.md`.
+- README reorganised into eight packs: Development, Growth Marketing,
+  Human Content, Sales and Client, SaaS / Product, QA / Release,
+  Automation, Privacy / Compliance.
+- New skill **`leadup-free-creative-assets-finder`** (23rd skill) — finds
+  free or safe-to-use creative assets (photos, stock images, vectors,
+  illustrations, icons, animated icons, Lottie, GIFs, stickers, 3D
+  models, 3D icons, video clips, emojis, avatars, plus SFX/music when
+  asked) for LeadUp websites, SaaS, admin panels, Flutter apps, social,
+  ads, blogs, proposals, and client projects. Verifies licenses for
+  commercial use, attribution, modification, redistribution, trademark
+  use, model/property releases, and API/TOS terms before recommending.
+  Outputs an 11-section asset plan (requirement summary, source
+  categories, search keywords, scored candidate table, license notes,
+  recommended format, implementation + performance notes, best pick,
+  backups, risk register). Marks any unclear case "Needs license
+  verification". Ships with 6 references
+  (`free-asset-source-list.md`, `license-checklist.md`,
+  `asset-format-guide.md`, `performance-optimization-guide.md`,
+  `leadup-asset-use-cases.md`, `search-keyword-framework.md`) and 5
+  asset templates (search brief, comparison table, license check,
+  website asset plan, social asset plan).
 - **Growth Skills Pack** (8 new skills, 15th–22nd) — turns the pack from a
   build-and-ship loop into a build + grow loop. Each skill follows the
   same 10-required-headings structure, ships with its own

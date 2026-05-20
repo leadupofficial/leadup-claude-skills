@@ -1,11 +1,11 @@
 # LeadUp Claude Skills Pack
 
-A pack of 22 Claude skills built around the real LeadUp Technologies
+A pack of 35 Claude skills built around the real LeadUp Technologies
 workflow: attach a source → analyze & research → plan → build → test in
 Docker → push → deploy to Coolify/`leadup-server` → update project memory.
-Split into a **Core Pack** (14 skills for the build-and-ship loop) and a
-**Growth Pack** (8 skills for SEO, content, social, ads, CRO, features,
-and growth research).
+Skills are grouped into eight packs: **Development**, **Growth Marketing**,
+**Human Content**, **Sales and Client**, **SaaS / Product**, **QA /
+Release**, **Automation**, and **Privacy / Compliance**.
 
 Each skill is a **fully self-contained** folder: a `SKILL.md` plus its own
 `references/` subfolder bundling only the reference files it links. A single
@@ -23,7 +23,7 @@ the workflow, the safety rules, and the expected output format.
 
 ## Skills
 
-### Core Pack (build-and-ship loop)
+### Development Pack (build-and-ship loop)
 
 | # | Skill | Use it to… |
 |---|---|---|
@@ -34,26 +34,69 @@ the workflow, the safety rules, and the expected output format.
 | 5 | `leadup-mcp-tool-orchestrator` | Pick & sequence MCP/tools safely, read-only first |
 | 6 | `leadup-browser-playwright-tester` | Run & E2E-test the app, write Playwright specs |
 | 7 | `leadup-deploy-checker` | Produce a READY/NOT READY deploy verdict (never deploys) |
-| 8 | `leadup-security-review` | Review secrets, auth, multi-tenant, payments, deploy risks |
-| 9 | `leadup-premium-ui-upgrader` | Raise UI to premium international-SaaS standard |
-| 10 | `leadup-status-updater` | Keep STATUS.md/TODO.md/CHANGELOG.md current |
-| 11 | `leadup-content-calendar-builder` | Build a social content calendar & strategy |
-| 12 | `leadup-client-document-generator` | Generate proposals, reports, dev/handoff docs, API emails |
-| 13 | `leadup-super-prompt-builder` | Turn a rough idea/instruction into a copy-paste-ready structured prompt for Claude Code, opencode, RuFlo, or ChatGPT |
-| 14 | `leadup-human-content-editor` | Rewrite AI-generated or AI-looking copy into natural, human, business-ready content for websites, SaaS, app UI, proposals, and social posts |
+| 8 | `leadup-premium-ui-upgrader` | Raise UI to premium international-SaaS standard |
+| 9 | `leadup-status-updater` | Keep STATUS.md/TODO.md/CHANGELOG.md current |
+| 10 | `leadup-super-prompt-builder` | Turn a rough idea/instruction into a copy-paste-ready structured prompt for Claude Code, opencode, RuFlo, or ChatGPT |
 
-### Growth Pack (SEO, content, ads, social, CRO, features, research)
+### Growth Marketing Pack (SEO, ads, social, CRO, research)
 
 | # | Skill | Use it to… |
 |---|---|---|
-| 15 | `leadup-seo-strategist` | Audit a site and ship a 30/60/90 day SEO plan (technical + on-page + schema + content gaps) |
-| 16 | `leadup-keyword-competitor-researcher` | Build a clustered keyword map + 3–5 competitor analysis with honest data labels |
-| 17 | `leadup-blog-content-writer` | Draft SEO-aware blog or service-page content in LeadUp's human, em-dash-free voice |
-| 18 | `leadup-smm-growth-planner` | Plan a 30-day social media growth strategy with pillars, reels, hooks, schedule, and KPIs |
-| 19 | `leadup-digital-ads-planner` | Plan paid campaigns (Google, Meta, LinkedIn, YouTube) with structure, budget, copy, creative, tracking, and policy notes |
-| 20 | `leadup-landing-page-cro-planner` | Audit a landing page and produce prioritized CRO fixes, A/B tests, and a conversion checklist |
-| 21 | `leadup-feature-option-planner` | Plan must-have, premium, and AI-powered features with MVP / Phase 2 / Phase 3 phasing and one recommended next feature |
-| 22 | `leadup-growth-research-agent` | Orchestrator: classify a growth request, pick the right LeadUp skill, run cross-cutting research, and recommend the next action |
+| 11 | `leadup-seo-strategist` | Audit a site and ship a 30/60/90 day SEO plan (technical + on-page + schema + content gaps) |
+| 12 | `leadup-keyword-competitor-researcher` | Build a clustered keyword map + 3–5 competitor analysis with honest data labels |
+| 13 | `leadup-blog-content-writer` | Draft SEO-aware blog or service-page content in LeadUp's human, em-dash-free voice |
+| 14 | `leadup-smm-growth-planner` | Plan a 30-day social media growth strategy with pillars, reels, hooks, schedule, and KPIs |
+| 15 | `leadup-content-calendar-builder` | Build a dated social content calendar with platform mix, hooks, captions, and posting times |
+| 16 | `leadup-digital-ads-planner` | Plan paid campaigns (Google, Meta, LinkedIn, YouTube) with structure, budget, copy, creative, tracking, and policy notes |
+| 17 | `leadup-landing-page-cro-planner` | Audit a landing page and produce prioritized CRO fixes, A/B tests, and a conversion checklist |
+| 18 | `leadup-growth-research-agent` | Orchestrator: classify a growth request, pick the right LeadUp skill, run cross-cutting research, and recommend the next action |
+| 19 | `leadup-free-creative-assets-finder` | Find free / safe-to-use photos, vectors, icons, Lottie animations, GIFs, 3D models, video clips, avatars, emojis (and SFX/music if asked) with verified licenses for LeadUp websites, SaaS, apps, social, and ads |
+
+### Human Content Pack
+
+| # | Skill | Use it to… |
+|---|---|---|
+| 20 | `leadup-human-content-editor` | Rewrite AI-generated or AI-looking copy into natural, human, business-ready content for websites, SaaS, app UI, proposals, and social posts |
+
+### Sales and Client Pack
+
+| # | Skill | Use it to… |
+|---|---|---|
+| 21 | `leadup-sales-proposal-builder` | Build a client-ready proposal, scope, quote, retainer, or AMC plan with exclusions and follow-up |
+| 22 | `leadup-client-requirement-analyzer` | Convert messy client messages, PDFs, screenshots, or voice notes into structured requirements + next reply |
+| 23 | `leadup-pricing-package-planner` | Design Basic / Standard / Premium tiers for websites, SEO, SMM, AMC, SaaS, AI automation, with honest margin notes |
+| 24 | `leadup-lead-funnel-builder` | Design an end-to-end lead funnel — traffic, LP, capture, qualify, follow-up, automation, tracking |
+| 25 | `leadup-client-document-generator` | Generate proposals, reports, dev/handoff docs, API emails |
+
+### SaaS / Product Pack
+
+| # | Skill | Use it to… |
+|---|---|---|
+| 26 | `leadup-saas-mvp-planner` | Plan a paid SaaS MVP — users, first paid feature, modules, tenant model, integrations, launch roadmap |
+| 27 | `leadup-feature-option-planner` | Plan must-have, premium, and AI-powered features with MVP / Phase 2 / Phase 3 phasing and one recommended next feature |
+| 28 | `leadup-ai-feature-planner` | Design one AI feature end-to-end — model, prompt, cost ledger, privacy, fallback, observability, test plan |
+| 29 | `leadup-admin-panel-planner` | Plan admin / dashboard modules, tables, filters, roles, KPI cards, audit log, empty/error states |
+
+### QA / Release Pack
+
+| # | Skill | Use it to… |
+|---|---|---|
+| 30 | `leadup-qa-test-case-generator` | Generate manual + Playwright + edge-case test cases with acceptance criteria |
+| 31 | `leadup-release-manager` | Prepare a release — summary, env diff, test status, risks, rollback, client comms, Go/No-Go |
+
+### Automation Pack
+
+| # | Skill | Use it to… |
+|---|---|---|
+| 32 | `leadup-whatsapp-automation-planner` | Plan compliant WhatsApp automation (reminders, follow-ups, campaigns) with opt-in, templates, and failure handling |
+| 33 | `leadup-n8n-workflow-builder` | Plan an n8n workflow with triggers, nodes, credentials, error handling, manual approval, and a text diagram |
+
+### Privacy / Compliance Pack
+
+| # | Skill | Use it to… |
+|---|---|---|
+| 34 | `leadup-security-review` | Review secrets, auth, multi-tenant, payments, deploy risks |
+| 35 | `leadup-pii-risk-reviewer` | Review PII fields, masking, encryption, retention, DSR, consent — aligned with DPDP, IT Rules, and GDPR |
 
 ## How it helps LeadUp work
 
