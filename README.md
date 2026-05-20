@@ -1,6 +1,6 @@
 # LeadUp Claude Skills Pack
 
-A pack of 13 Claude skills built around the real LeadUp Technologies workflow:
+A pack of 14 Claude skills built around the real LeadUp Technologies workflow:
 attach a source → analyze & research → plan → build → test in Docker → push →
 deploy to Coolify/`leadup-server` → update project memory.
 
@@ -35,6 +35,7 @@ the workflow, the safety rules, and the expected output format.
 | 11 | `leadup-content-calendar-builder` | Build a social content calendar & strategy |
 | 12 | `leadup-client-document-generator` | Generate proposals, reports, dev/handoff docs, API emails |
 | 13 | `leadup-super-prompt-builder` | Turn a rough idea/instruction into a copy-paste-ready structured prompt for Claude Code, opencode, RuFlo, or ChatGPT |
+| 14 | `leadup-human-content-editor` | Rewrite AI-generated or AI-looking copy into natural, human, business-ready content for websites, SaaS, app UI, proposals, and social posts |
 
 ## How it helps LeadUp work
 

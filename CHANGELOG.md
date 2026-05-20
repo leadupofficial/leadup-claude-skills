@@ -6,6 +6,17 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 ## [Unreleased]
 
 ### Added
+- New skill **`leadup-human-content-editor`** (14th skill) — converts
+  AI-generated or AI-looking text into natural, human, client-ready copy
+  for LeadUp websites, SaaS, app UI, proposals, and social content. Covers
+  9 rewrite modes (landing, SaaS feature, About, service, microcopy,
+  proposal, social, WhatsApp/email, technical). Strips em dashes and the
+  banned hype-word list (seamless, empower, unlock, robust, cutting-edge,
+  …), preserves meaning, SEO keywords, and structure, and flags
+  unverifiable claims. Ships with 4 references
+  (`human-writing-rules.md`, `ai-style-warning-signs.md`,
+  `leadup-copy-tone.md`, `rewrite-examples.md`) and 3 asset templates
+  (website, SaaS, microcopy).
 - New skill **`leadup-super-prompt-builder`** (13th skill) — converts a
   rough idea / instruction / broken-English task into a copy-paste-ready
   structured prompt for Claude Code, opencode, RuFlo, or ChatGPT, covering
