@@ -6,6 +6,27 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 ## [Unreleased]
 
 ### Added
+- New skill **`leadup-skill-router`** (37th skill) — master router
+  that takes any user request (rough idea, client message, task)
+  and decides: intent category, which of 11 workflow packs applies,
+  the ordered skill sequence (capped at 5–7), the model per step
+  (DeepSeek for low risk, Claude Sonnet/Opus for high risk),
+  research + tooling needs, the approval gate, and which memory
+  files (`STATUS.md`, `DEPLOY.md`, `PROJECT.md`, `AGENTS.md`,
+  `CHANGELOG.md`) must be updated. Outputs a 12-section report plus
+  a ready-to-paste **super-prompt** for Claude Code / RuFlo /
+  opencode. Reads `SKILL_REGISTRY.md` for the catalogue. Ships with
+  5 references (`skill-routing-table.md`, `workflow-pack-map.md`,
+  `model-routing-rules.md`, `safety-routing-rules.md`,
+  `router-examples.md`) and 3 asset templates (`router-output`,
+  `super-prompt-output`, `workflow-sequence`).
+- New root-level **`SKILL_REGISTRY.md`** — single source of truth
+  for every skill: name, category, risk level, use case, triggers,
+  related skills. Lists 37 shipped skills and 2 planned skills
+  (`leadup-multi-tenant-architect`, `leadup-backup-rollback-planner`)
+  with their substitution rules.
+- README updated: new "Router" section at the top of the skills
+  catalogue.
 - New skill **`leadup-public-api-finder`** (36th skill) — discovers,
   compares, and recommends free / public / third-party APIs for LeadUp
   projects using `public-apis/public-apis` (discovery only), official

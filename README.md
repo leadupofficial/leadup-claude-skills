@@ -1,11 +1,14 @@
 # LeadUp Claude Skills Pack
 
-A pack of 36 Claude skills built around the real LeadUp Technologies
+A pack of 37 Claude skills built around the real LeadUp Technologies
 workflow: attach a source → analyze & research → plan → build → test in
 Docker → push → deploy to Coolify/`leadup-server` → update project memory.
-Skills are grouped into eight packs: **Development**, **Growth Marketing**,
-**Human Content**, **Sales and Client**, **SaaS / Product**, **QA /
-Release**, **Automation**, and **Privacy / Compliance**.
+Skills are grouped into eight packs (plus a master router):
+**Development**, **Growth Marketing**, **Human Content**, **Sales and
+Client**, **SaaS / Product**, **QA / Release**, **Automation**, and
+**Privacy / Compliance**. The router (`leadup-skill-router`) reads
+`SKILL_REGISTRY.md` to pick the right pack + chain + model + approval
+gate for any incoming request.
 
 Each skill is a **fully self-contained** folder: a `SKILL.md` plus its own
 `references/` subfolder bundling only the reference files it links. A single
@@ -22,6 +25,12 @@ the repeatable parts of that work so any Claude session starts already knowing
 the workflow, the safety rules, and the expected output format.
 
 ## Skills
+
+### Router (master orchestrator)
+
+| # | Skill | Use it to… |
+|---|---|---|
+| 0 | `leadup-skill-router` | Master router. Takes any request (rough idea, client message, task), classifies intent, picks the pack + skill chain + model + approval gate, and outputs a copy-paste super-prompt for Claude Code / RuFlo / opencode. Reads `SKILL_REGISTRY.md` for the catalogue. |
 
 ### Development Pack (build-and-ship loop)
 
