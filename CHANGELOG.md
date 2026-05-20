@@ -6,6 +6,25 @@ Format based on Keep a Changelog; this pack uses date-based releases.
 ## [Unreleased]
 
 ### Added
+- New skill **`leadup-public-api-finder`** (36th skill) — discovers,
+  compares, and recommends free / public / third-party APIs for LeadUp
+  projects using `public-apis/public-apis` (discovery only), official
+  documentation (source of truth), provider pricing pages, GitHub
+  examples, RapidAPI, ApyHub, and Postman public collections. Scores
+  each candidate 1–5 on eight axes (fit, docs, pricing, reliability,
+  auth, CORS, integration, commercial use), flags sub-3 axes as risks,
+  and outputs a 15-section report with a best + backup pick, env
+  placeholders, backend-vs-frontend placement decision, rate-limit and
+  pricing notes, an implementation plan, a 3–5 fixture test plan, and a
+  final `use now / prototype only / avoid` decision. Routes payments
+  to `leadup-security-review`, WhatsApp to
+  `leadup-whatsapp-automation-planner`, AI to
+  `leadup-ai-feature-planner`, and PII to `leadup-pii-risk-reviewer`.
+  Ships with 5 references (`public-api-discovery-framework.md`,
+  `api-verification-checklist.md`, `api-scoring-framework.md`,
+  `leadup-api-use-cases.md`, `public-apis-repo-notes.md`) and 4 asset
+  templates (api-comparison, api-integration-plan, env-placeholders,
+  api-test-plan). README renumbered: Development Pack now 11 skills.
 - **Sales + SaaS + QA + Automation + Privacy expansion** (12 new skills,
   24th–35th) — adds the rest of LeadUp's working loop beyond build + grow.
   All follow the same 10-required-headings structure, ship their own
