@@ -1,6 +1,6 @@
 """Per-connection orchestration: handshake → listen → transcribe → agent → speak.
 
-One Session per connected K10. It owns the conversation state, the chosen voice
+One Session per connected XIAO. It owns the conversation state, the chosen voice
 providers, the Opus codec, and the Claude agent.
 
 Phase 0 note: with the stubbed Opus codec, real audio can't be decoded/encoded yet, so

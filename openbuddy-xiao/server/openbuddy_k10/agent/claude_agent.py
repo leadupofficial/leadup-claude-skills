@@ -2,7 +2,7 @@
 
 This is the OpenBuddy-derived differentiator — the device is backed by an *agent* that can
 use tools, not just a chat completion. Lifecycle events (thinking, tool use, done) are
-surfaced via the `on_state` callback so the K10's face reacts in real time.
+surfaced via the `on_state` callback so the XIAO's face reacts in real time.
 
 Requires:  pip install claude-agent-sdk   ; ANTHROPIC_API_KEY in the environment.
 
@@ -22,7 +22,7 @@ from ..pet_state import PetState
 OnState = Callable[[PetState], Awaitable[None]]
 
 SYSTEM_PROMPT = (
-    "You are OpenBuddy, a small, warm, witty desk companion living inside a DFRobot K10. "
+    "You are OpenBuddy, a small, warm, witty desk companion living inside a Seeed XIAO ESP32S3 Sense. "
     "You hear the user through a microphone and reply through a tiny speaker, so keep "
     "answers short, spoken, and friendly — usually one or two sentences. You can also help "
     "with real tasks when asked. Reply in the user's language (Chinese or English)."

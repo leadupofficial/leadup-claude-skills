@@ -1,4 +1,4 @@
-"""FastAPI entrypoint exposing the xiaozhi WebSocket endpoint the K10 connects to.
+"""FastAPI entrypoint exposing the xiaozhi WebSocket endpoint the XIAO connects to.
 
 Run:  python -m openbuddy_k10.main      (or `openbuddy-k10` after `pip install -e .`)
 """
@@ -17,7 +17,7 @@ from .session import Session
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("openbuddy_k10")
 
-app = FastAPI(title="OpenBuddy-K10", version="0.1.0")
+app = FastAPI(title="OpenBuddy-XIAO", version="0.1.0")
 
 
 @app.get("/healthz")

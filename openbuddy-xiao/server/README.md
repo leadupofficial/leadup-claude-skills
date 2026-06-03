@@ -1,6 +1,6 @@
 # openbuddy-k10 server
 
-FastAPI server that speaks the xiaozhi WebSocket protocol to a DFRobot K10, with a Claude
+FastAPI server that speaks the xiaozhi WebSocket protocol to a Seeed XIAO ESP32S3 Sense, with a Claude
 Agent brain and swappable voice providers. See `../ARCHITECTURE.md` for the layer map.
 
 ## Install & run
@@ -31,7 +31,7 @@ pip install -e '.[elevenlabs]'   # Phase 2: ElevenLabs STT/TTS (OpenBuddy parity
 - 🟡 Real audio in/out is stubbed — implement `audio/opus_codec.py` + a voice provider
 
 So Phase 0 lets you verify the device connects, the handshake completes, recognized-text
-and emotions show on the K10 screen, and the agent loop runs — before you invest in audio.
+and emotions show on the XIAO screen, and the agent loop runs — before you invest in audio.
 
 ## Layout
 

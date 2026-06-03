@@ -46,7 +46,7 @@ def tts(state: str, session_id: str, text: Optional[str] = None) -> dict[str, An
 
 
 def llm(emotion: str, session_id: str, text: str = "") -> dict[str, Any]:
-    """UI emotion update -> drives the K10 face. `emotion` must exist in the fw emoji set."""
+    """UI emotion update -> drives the XIAO face. `emotion` must exist in the fw emoji set."""
     return {"type": "llm", "emotion": emotion, "text": text, "session_id": session_id}
 
 

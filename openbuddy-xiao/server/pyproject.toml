@@ -1,7 +1,7 @@
 [project]
 name = "openbuddy-k10"
 version = "0.1.0"
-description = "AI voice companion server for DFRobot K10 (xiaozhi protocol) with a Claude Agent brain"
+description = "AI voice companion server for Seeed XIAO ESP32S3 Sense (xiaozhi protocol) with a Claude Agent brain"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115",

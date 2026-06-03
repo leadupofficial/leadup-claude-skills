@@ -35,7 +35,7 @@ device → server : {"type":"listen", "state":"stop"}
 server → device : {"type":"stt", "text":"<recognized>"}     # show on screen
    server: text → Claude Agent (agent/claude_agent)
             lifecycle hooks fire → pet_state changes
-server → device : {"type":"llm", "emotion":"thinking"}      # drive K10 face
+server → device : {"type":"llm", "emotion":"thinking"}      # drive XIAO face
    server: reply text → TTS (voice) → opus frames
 server → device : {"type":"tts", "state":"start"}
 server → device : <binary opus frames...>            # pet speaking
@@ -48,9 +48,9 @@ server → device : {"type":"tts", "state":"stop"}
 ## Pet states ↔ xiaozhi `llm` emotion
 
 OpenBuddy reacts to Claude Code lifecycle events. We translate those into the `emotion`
-field of the xiaozhi `llm` message, which the K10 firmware renders on screen.
+field of the xiaozhi `llm` message, which the XIAO firmware renders on screen.
 
-| Agent lifecycle | Pet state | `llm.emotion` sent to K10 |
+| Agent lifecycle | Pet state | `llm.emotion` sent to XIAO |
 |---|---|---|
 | turn received | `listening` | `neutral` |
 | Claude generating | `thinking` | `thinking` |
@@ -68,5 +68,5 @@ field of the xiaozhi `llm` message, which the K10 firmware renders on screen.
 - **Change the brain's personality / tools:** `agent/claude_agent.py` system prompt + allowed
   tools / MCP servers passed to `ClaudeAgentOptions`.
 - **MCP / IoT control:** the xiaozhi protocol carries an `mcp` (JSON-RPC 2.0) channel for
-  device capability discovery and tool calls — a natural bridge to the K10's hardware
+  device capability discovery and tool calls — a natural bridge to the XIAO's hardware
   (LED, sensors). Not implemented in the scaffold; noted as a TODO in `protocol/messages.py`.

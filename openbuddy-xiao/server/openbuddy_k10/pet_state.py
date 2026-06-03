@@ -1,6 +1,6 @@
 """OpenBuddy-style pet states and their mapping to xiaozhi `llm` emotions.
 
-The K10 (xiaozhi firmware) renders an emotion on screen when it receives an `llm`
+The XIAO (xiaozhi firmware) renders an emotion on screen when it receives an `llm`
 message. We translate Claude Agent lifecycle events into these emotions so the pet
 visibly reacts to thinking / tool use / completion — the OpenBuddy desk-pet feel.
 
